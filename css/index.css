@@ -1,24 +1,34 @@
-/* Common */
+/* Default */
+.row {margin-left: 0; margin-right: 0;}
+.vh-100 {height: 100vh;}
+
+/* Left */
+.navi-wrap > li:hover {background-color: #ccc; cursor: pointer;}
 
 
-/* Header */
+
+.wrap {display: flex;}
+.lt-wrap {display: none; background-color: chocolate;}
+.rt-wrap {flex: 100% 0 0; background-color: darkseagreen;}
 
 
-/* Main */
-
-
-/* Footer */
-
-
-/* Responsive */
-@media screen and (max-width: 992px) {
+/* Responsive - sm */
+@media screen and (min-width: 576px) {
 	
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive - md */
+@media screen and (min-width: 768px) {
 
 }
 
-@media screen and (max-width: 575px) {
+/* Responsive - lg */
+@media screen and (min-width: 992px) {
+	.lt-wrap {display: block; flex: 25% 0 0;}
+	.rt-wrap {flex: 75% 0 0;}
+}
+
+/* Responsive - xl */
+@media screen and (min-width: 1200px) {
 
 }
